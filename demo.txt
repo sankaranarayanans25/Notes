@@ -1,1 +1,90 @@
-demo demo demo
+Github 
+
+Git to VSCode
+
+Git clone (to get file from repository to vscode):
+* git clone https//link
+
+cd folder_name (to redirect path)
+
+git status (to check the repository status that shows the Untracked files: U file)
+
+Git Pull (to get added file and modified file from git to vscode)
+*  git pull
+
+VSCode to Git
+
+Git Add and Push  (to add a file into repository from vscode):
+* git add file_name.txt  (to add file to .git file, change symbol U into A)
+
+git status (to check the repository status that shows changes to be committed: new file )
+
+* git commit -m “adding file” (to commit the file into git, changes into no symbol or normal)
+
+* git push origin main (to push into repository)
+
+Git Modify (to modify the file)
+	// changes on file (symbol M)
+* git add file_name.txt  
+* git commit -m “modify file” (to commit the file into git, changes into no symbol or normal)
+* git push origin main (to push into repository)
+
+Git Delete (to delete a file)
+	//delete a file in vscode
+* git add file_name.txt  
+* git commit -m “delete file” 
+* git push origin main (to push into repository)
+
+Creating a new Folder and new Repository
+
+	//Create folder on it 
+
+cd .. (to redirect path backwards)
+cd folder_name2 (to redirect path)
+
+* git init (to creating a bridge b/w vscode and git using .git file)
+* git add . (to add all the change and adding all file into .git file, change symbol U into A)
+* git commit -m “adding file” (to commit the file into git, changes into no symbol or normal)
+
+	//Create a repository on GitHub (creating a repository for this folder as folder_name2 )
+
+* git remote add origin https//link (to connect with repository)
+
+* git branch -M main (to rename it as main)
+* git push origin main (to push into repository)
+OR
+* git branch // git remote show origin (to check the branch name)
+* git push origin branch_name (to push into repository with same name)
+
+New branch 
+
+	//Create a new branch on git (new one has the main file, for separate user)
+* git pull (to update on vscode that new branch)
+OR
+* git branch branch_name
+	// add file 
+* git add file_name.txt  
+* git commit -m “new branch” 
+* git push origin branch_name
+
+* git branch -a (to list the branch on the repository)
+* git checkout branch_name (to redirect the branch)
+	
+	// back to main
+git diff branch_name (to check diff b/t main and another branch)
+
+To add file from another branch to main
+* git merge branch_name (to get file from branch_name to main)
+* git push origin main (to push into repository)
+
+To pull from main to branch_name
+* git pull origin main (to pull data or file from main to branch_name)
+
+Pull Request
+	//pull request —> compare main with another branch —> new request —> Create it
+
+VS Code Symbol 
+// U untracked 
+// A added
+// M modified 
+q for terminal prb
